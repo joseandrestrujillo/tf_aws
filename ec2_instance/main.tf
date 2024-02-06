@@ -17,6 +17,6 @@ resource "aws_instance" "tf_ec2_instance" {
   instance_type = "t2.micro"
 
   tags = {
-    name = "EC2 instance provisioned by TF"
+    Name = var.instance_name
   }
 }
